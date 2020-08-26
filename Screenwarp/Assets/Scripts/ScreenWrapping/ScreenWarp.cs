@@ -9,7 +9,7 @@ public class ScreenWarp : MonoBehaviour {
 
      public float teleportScaleX = 1.76f;
      public float teleportScaleY = 1.0f;
-    //ScreenDupe
+    //Screen intersection clone
     public GameObject cloneReflectionL;
     public GameObject cloneReflectionR;
     Vector3 offset;

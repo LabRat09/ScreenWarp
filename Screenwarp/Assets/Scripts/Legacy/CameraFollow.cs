@@ -10,14 +10,6 @@ public class CameraFollow : MonoBehaviour {
 
     public Vector3 Offest;
     public Component warpComponent; 
-
-    // Use this for initialization
-    void Start ()
-    {
-        
-    }
-	
-	// Update is called once per frame
 	void Update ()
     {
 

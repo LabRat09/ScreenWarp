@@ -11,22 +11,24 @@ public class GravitySwap : MonoBehaviour {
 
     public AudioClip FlipUp;
 
-    // Use this for initialization
     void Start ()
     {
         audioSource = Camera.main.GetComponent<AudioSource>();
+        UpdateGravityDirection();
     }
-	
-	// Update is called once per frame
-	void Update ()
+    private void Update() 
     {
-        if(Input.GetButtonDown("Interact"))
+         if(Input.GetButtonDown("Interact"))
         {
-            swapped = !swapped;
-            audioSource.clip = FlipUp;
-            audioSource.Play();
+        //Switch which direction gravity will go
+        swapped = !swapped;
+        audioSource.clip = FlipUp;
+        audioSource.Play();
+        UpdateGravityDirection();
         }
-
+    }
+	void UpdateGravityDirection()
+    {
 		if(swapped == true)
         {
             Physics2D.gravity = new Vector2(0, 9.8f);

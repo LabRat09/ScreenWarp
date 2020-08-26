@@ -4,23 +4,10 @@ using UnityEngine;
 
 public class GridFollow : MonoBehaviour {
 
-  
-
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    //makes the grid in the menu follow the camera for the "falling" looking effect for the menu screen
     void Update()
     {
-
-
-
         Vector3 targetPos = Camera.main.transform.position;
         Vector3 pos = transform.position;
-        //pos.x = 3;
-        //Debug.Log(targetPos);
     }
 }

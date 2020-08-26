@@ -14,7 +14,7 @@ public class BoxSound : MonoBehaviour {
     public AudioClip mediumImpactSound;
     public AudioClip lightImpactSound;
 
-    public Camera mainCam;
+    Camera mainCam;
     // Use this for initialization
     void Start ()
     {
